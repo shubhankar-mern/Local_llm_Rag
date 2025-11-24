@@ -16,10 +16,13 @@ let vectorStoreRetriever; // Global variable to hold the retriever instance
 // --- 1. Load, Split & Save Documents (Indexing Phase) ---
 async function indexDocuments(ulink) {
     console.log("Starting indexing phase...");
-    
+    let url = ulink;
+    if (!url) {
+        url = "https://www.freecodecamp.org/news/the-next-js-handbook/";  
+    }
     
     const loader = new CheerioWebBaseLoader(
-      "https://www.freecodecamp.org/news/the-next-js-handbook/"
+        url
     );
     const docs = await loader.load();
     
