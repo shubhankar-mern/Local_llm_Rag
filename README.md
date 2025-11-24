@@ -1,8 +1,8 @@
-Persistent RAG CLI with HNSWLib & OpenAI
+# Persistent RAG CLI with HNSWLib & OpenAI
 
 This project provides a robust Command Line Interface (CLI) application for Retrieval-Augmented Generation (RAG) using modern JavaScript and the LangChain framework. It is designed to demonstrate persistent vector indexing using the high-performance HNSWLib library, allowing the index to be saved locally and reloaded quickly without re-embedding data.
 
-🚀 Key Features
+# 🚀 Key Features
 
 Persistent Storage: The RAG index is saved to the local directory (hnswlib_rag_index/) using HNSWLib, enabling fast startups after the initial indexing run.
 
@@ -12,7 +12,7 @@ OpenAI Integration: Utilizes OpenAI's embeddings (text-embedding-ada-002) and ch
 
 Interactive CLI: A simple menu system for indexing, loading, querying, and deleting the data store.
 
-🛠️ Prerequisites
+# 🛠️ Prerequisites
 
 To run this application, you must have:
 
@@ -20,7 +20,7 @@ Node.js: Version 18 or higher.
 
 OpenAI API Key: Required for generating embeddings and LLM responses.
 
-⚙️ Setup and Installation
+# ⚙️ Setup and Installation
 
 1. Create Project Directory
 
